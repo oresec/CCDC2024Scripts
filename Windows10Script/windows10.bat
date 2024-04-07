@@ -1,0 +1,1 @@
+powershell.exe -ExecutionPolicy Unrestricted -File "windows10.ps1"
