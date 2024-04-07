@@ -75,10 +75,10 @@ bash -c "echo 'kernel.dmesg_restrict=1' > /etc/sysctl.d/50-dmesg-restrict.conf"
 bash -c"echo 'kernel.kptr_restrict=1' > /etc/sysctl.d/50-kptr-restrict.conf"
 bash -c "echo 'kernel.exec-shield=2' > /etc/sysctl.d/50-exec-shield.conf"
 bash -c "echo 'kernel.randomize_va_space=2' > /etc/sysctl.d/50-rand-va-space.conf"
-#bash -c "apt-get --purge -y remove ubuntu-desktop firefox "
-#bash -c "passwd -l $USER"
-#bash -c "passwd -l root"
-#bash -c "/sbin/shutdown now"
+bash -c "apt-get --purge -y remove ubuntu-desktop firefox "
+bash -c "passwd -l $USER"
+bash -c "passwd -l root"
+bash -c "/sbin/shutdown now"
 #system logging
 systemctl enable rsyslog
 systemctl start rsyslog
